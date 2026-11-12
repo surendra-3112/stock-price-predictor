@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  code, kbd, samp, pre, .font-mono {
+    font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+:root {
+  --bg-page: #F6F6F9;
+  --bg-header-sidebar: #FFFFFF;
+  --bg-card: #FFFFFF;
+  --border-subtle: #E4E4EB;
+  --text-primary: #18181B;
+  --text-secondary: #6B6B76;
+  --accent-violet: #7C3AED;
+}
+
+.dark {
+  --bg-page: #121214;
+  --bg-header-sidebar: #17171B;
+  --bg-card: #1C1C21;
+  --border-subtle: #2E2E36;
+  --text-primary: #EDEDF0;
+  --text-secondary: #9A9AA5;
+  --accent-violet: #8B5CF6;
+}
+
+@media print {
+  header, nav, aside, .no-print, button {
+    display: none !important;
+  }
+  body {
+    background: white !important;
+    color: black !important;
+  }
+  .print-area {
+    display: block !important;
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+}

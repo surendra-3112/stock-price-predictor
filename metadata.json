@@ -1,0 +1,6 @@
+{
+  "name": "Stock Price Predictor",
+  "description": "Interactive GUI stock price prediction and technical indicators suite based on CSE 213 (SRM University AP) algorithms.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
